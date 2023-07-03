@@ -58,7 +58,7 @@ app.post("/home", (req, res) => {
 app.post("/fileUpload", async (req, res) => {
   // const name = req.body.name;
   // const email = req.body.email;
-  const file = req.files.img;
+  const file = req.files.file;
   // console.log(name, email);
 
   await file.mv("public/images/" + file.name, async (err) => {
